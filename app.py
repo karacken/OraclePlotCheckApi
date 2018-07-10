@@ -1,12 +1,8 @@
-from itertools import combinations
-
 import cx_Oracle
-import json
 from shapely.geometry import Point
 from shapely.geometry.polygon import Polygon
 from flask import Flask,abort
 from flask import request, jsonify
-from shapely.ops import cascaded_union
 
 app = Flask(__name__)
 app.config['JSON_SORT_KEYS'] = False
