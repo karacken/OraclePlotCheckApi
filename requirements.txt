@@ -1,0 +1,10 @@
+click==6.7
+cx-Oracle==6.4
+Flask==1.0.2
+gunicorn==19.9.0
+itsdangerous==0.24
+Jinja2==2.10
+MarkupSafe==1.0
+Shapely==1.6.4.post1
+SQLAlchemy==1.2.9
+Werkzeug==0.14.1
