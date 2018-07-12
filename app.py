@@ -24,15 +24,7 @@ def find_plot_with_coordinates():
     cursor.execute(query)
     #{"lat":26.882203,"long":84.596085,"vill_code":305,"sea":"2016-17"}
     result = cursor.fetchall()
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-    return jsonify(result)
->>>>>>> a059e71586995306aafeb8539f7cbd867e04f2c8
-=======
-    return jsonify(result)
->>>>>>> a059e71586995306aafeb8539f7cbd867e04f2c8
-    point = Point(float(json_request.json['lat']), float(json_request.json['long']))
+	point = Point(float(json_request.json['lat']), float(json_request.json['long']))
 
     for row in result:
         if get_polygon(row).contains(point):
